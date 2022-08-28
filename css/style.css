@@ -1,0 +1,321 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe Print', 'Garet Light';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 70px;
+    background-color: black;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0px;
+    height: var(--navbar-height);
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo {
+    margin: 5px 20px;
+}
+
+#imglogo {
+    margin: 3px 6px;
+    height: 60px;
+}
+
+/* Navigation Bar: List Styling  */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin-right: 60px;
+}
+
+/* #navbar ul li  */
+#navbar ul li a {
+    font-family: 'Patrick Hand SC', 'Garet Light';
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a:hover {
+    color: chocolate;
+    background-color: beige;
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home:before {
+    content: "";
+    background: url('../bg2.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -2;
+    opacity: .7;
+}
+
+#home h1 {
+    color: white;
+}
+
+/* Gap */
+.gap {
+    height: 100px;
+}
+
+/* Services  */
+#service-container::before {
+    position: relative;
+}
+
+#service-container::before {
+    content: "";
+    background: url('../bg.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 600px;
+    height: 600px;
+    width: 100%;
+    z-index: -2;
+    opacity: .18;
+}
+
+#services {
+    margin: 40px 30px;
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box {
+    /* border: 2px solid brown; */
+    padding: 20px;
+    margin: 20px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+}
+
+#services .box h2 a {
+    font-family: 'Patrick Hand SC', 'Garet Light';
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#services .box p {
+    font-size: 0.9rem;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+/* Clients Section  */
+#clients::before {
+    content: "";
+    background: url('../bg.jpg') no-repeat center/cover;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#clients {
+    background-color: rgba(207, 207, 207, 0.8);
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+}
+
+#clients h1 {
+    color: black;
+}
+
+.client {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item {
+    padding: 10px 20px;
+}
+
+.client-item img {
+    max-height: 4rem;
+    max-width: 8rem;
+
+}
+
+/* Contact section  */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url('../bg3.jpg') no-repeat center/cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: .4;
+}
+
+.contactbox {
+    display: flex;
+    padding-bottom: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactbox input,
+textarea {
+    padding: .4rem;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-family: 'Agency FB';
+}
+
+.contactbox form {
+    width: 30%;
+}
+
+
+/* Footer  */
+footer {
+    background-color: rgb(31, 31, 31);
+}
+
+footer div {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: .85rem;
+}
+
+/* Utility Classes */
+.h-primary {
+    color: white;
+    text-align: center;
+    font-family: 'Patrick Hand SC', 'Glock Grotesque 2 Medium';
+    font-size: 4rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    color: wheat;
+    text-align: center;
+    font-family: 'Patrick Hand SC', 'Glock Grotesque 2 Medium';
+    font-size: 1.9rem;
+    padding: 6px;
+}
+
+.paragraph {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Segoe Print', 'Garet Light';
+}
+
+.btn {
+    padding: 6px 50px;
+    border: 2px solid chocolate;
+    border-radius: 4px;
+    background-color: bisque;
+    margin: 40px;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    border: 2px solid bisque;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:active {
+    color: white;
+    border: 2px solid brown;
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+.btn2 {
+    padding: 6px 50px;
+    border: 2px solid grey;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(59, 59, 59);
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.btn2:hover {
+    border: 2px solid bisque;
+    background-color: white;
+    cursor: pointer;
+    color: chocolate;
+}
+
+.btn2:active {
+    color: white;
+    border: 2px solid rgb(31, 31, 31);
+    background-color: grey;
+    cursor: pointer;
+}

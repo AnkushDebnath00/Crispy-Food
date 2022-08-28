@@ -1,0 +1,22 @@
+#navbar {
+    flex-direction: column;
+    height: 110px;
+    width: 100%;
+}
+
+#navbar ul li {
+    margin-right: 5px;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+}
+
+.paragraph {
+    font-size: 0.8rem;
+}
+
+.client-item img {
+    max-height: 2.5rem;
+    max-width: 4rem;
+}

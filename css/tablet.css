@@ -1,0 +1,95 @@
+/* Navigation */
+#navbar {
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+}
+
+#navbar ul li {
+    margin-right: 20px;
+
+}
+
+#navbar ul li a {
+    font-size: 1.2rem;
+}
+
+/* home */
+#home {
+    padding: 3px 20px;
+    height: 550px;
+}
+
+#home:before {
+    height: 600px;
+    width: 100%;
+}
+
+#home h1 {
+    margin-top: 160px;
+}
+
+.gap {
+    height: 70px;
+}
+
+/* Services  */
+#services {
+    flex-direction: column;
+}
+
+/* Clients  */
+.client {
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.client-item img {
+    max-height: 3rem;
+    max-width: 6rem;
+}
+
+/* Contact Us */
+.contactbox form {
+    width: 50%;
+}
+
+.contactbox input,
+textarea {
+    padding: .4rem;
+    width: 100%;
+    border-radius: 6px;
+    font-size: .8rem;
+    font-style: italic;
+    font-family: 'Agency FB';
+}
+
+/* Footer  */
+footer div {
+    font-size: .7rem;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3rem;
+}
+
+p {
+    font-size: small;
+}
+
+.btn {
+    padding: 3px 30px;
+    margin: 30px;
+    font-size: 1.2rem;
+}
+
+.btn2 {
+    padding: 3px 30px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.paragraph {
+    font-size: 1rem;
+}
